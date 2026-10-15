@@ -1,247 +1,116 @@
 Purchase Order Tracker | Microsoft Excel
 
-A practical Excel workbook for tracking purchase orders, goods receipts, supplier information, delivery progress, and outstanding quantities.
+An Excel-based tool for monitoring purchase orders, goods receipts, supplier information, and delivery progress.
 
 Tool: Microsoft Excel
-Project Type: Procurement & Purchase Order Monitoring
 Data: Sample data for demonstration purposes
 
-Project Overview
+Overview
 
-This project provides a structured Excel solution for monitoring purchase orders, recording goods receipts, maintaining supplier information, and tracking delivery performance.
+This project streamlines purchase order monitoring by connecting order records, goods receipts, and supplier information in one workbook. Automated calculations track order values, received and outstanding quantities, delivery status, and days late, helping users identify orders that require follow-up.
 
-It connects purchase orders with individual receipt records and supplier data, while automatically calculating order values, received quantities, remaining quantities, delivery status, and days late.
-
-The dashboard provides a consolidated view of purchasing activity and highlights orders that may require follow-up.
-
-Dashboard Preview
+Dashboard
 
 <p align="center">
-  <img src="screenshots./Dashboard-sheet.png" width="950" alt="Purchase Order Dashboard">
+  <img src="screenshots./Dashboard-sheet.png" width="950" alt="Purchase Order Tracker Dashboard">
 </p>
-
-The dashboard includes:
-
-Total purchase orders
-
-Total purchase order value (SAR)
-
-Overdue orders
-
-Completion rate
-
-Order status distribution
-
-Ordered, received, and outstanding quantities
-
-Approximate value of received goods
 
 Key Features
 
-1. Purchase Order Tracking
+Purchase Order Tracking
 
 <p align="center">
-  <img src="screenshots./Purchase-Orders-sheet1.png" width="1000" alt="Purchase Orders - Order Details">
+  <img src="screenshots./Purchase-Orders-sheet1.png" width="1000" alt="Purchase Order Details">
 </p>
 
 <p align="center">
-  <img src="screenshots./Purchase-Orders-sheet2.png" width="1000" alt="Purchase Orders - Quantities and Status">
+  <img src="screenshots./Purchase-Orders-sheet2.png" width="1000" alt="Purchase Order Quantities and Status">
 </p>
 
-Record purchase order numbers, suppliers, item descriptions, categories, and delivery dates.
+Automatic calculation of purchase order values and remaining quantities.
 
-Retrieve supplier names using supplier IDs.
+Supplier name lookup using supplier IDs.
 
-Calculate purchase order values automatically.
+Automated order status and days-late calculations.
 
-Track ordered, received, and remaining quantities.
+Filters and conditional formatting to support delivery follow-up.
 
-Calculate the latest receipt date and days late.
-
-Automatically assign order statuses.
-
-Use filters to identify orders requiring follow-up.
-
-2. Goods Receipt Tracking
+Goods Receipt Tracking
 
 <p align="center">
   <img src="screenshots./Receipts-sheet.png" width="900" alt="Goods Receipt Log">
 </p>
 
-Record each delivery as a separate receipt event.
+Records each delivery separately, supports multiple receipts per purchase order, and aggregates received quantities automatically.
 
-Link each receipt to its corresponding purchase order.
-
-Support multiple deliveries against one purchase order.
-
-Aggregate received quantities automatically in the Purchase Orders worksheet.
-
-3. Supplier Directory
+Supplier Directory
 
 <p align="center">
   <img src="screenshots./Suppliers-sheet.png" width="1000" alt="Supplier Directory">
 </p>
 
-Maintain unique supplier IDs and supplier names.
+Maintains supplier details, contact information, supply categories, typical lead times, and sample supplier ratings.
 
-Store contact details and supply categories.
+Sample Results
 
-Record typical supplier lead times and sample supplier ratings.
-
-Link suppliers to purchase orders using supplier IDs.
-
-Workbook Structure
-
-Worksheet
-
-Purpose
-
-Dashboard
-
-Summarizes purchasing KPIs, order statuses, and quantity metrics.
-
-Purchase Orders
-
-Tracks order details, values, quantities, delivery dates, and status.
-
-Receipts
-
-Records individual goods receipt events.
-
-Suppliers
-
-Maintains supplier details and sample supplier information.
-
-Read Me
-
-Provides instructions and workbook assumptions.
-
-Sample Data Snapshot
-
-The workbook contains eight sample purchase orders and six sample goods receipt records.
+The included dataset contains eight purchase orders and six goods receipt records.
 
 Metric
 
-Sample Result
+Result
 
-Total Purchase Orders
-
-8
-
-Total PO Value
+Total purchase order value
 
 SAR 44,440.00
 
-Total Ordered Quantity
+Total ordered quantity
 
 694
 
-Total Received Quantity
+Total received quantity
 
 295
 
-Total Outstanding Quantity
+Total outstanding quantity
 
 399
 
-Approximate Received Value
+Approximate received value
 
 SAR 18,125.00
 
-These figures represent the included sample data and may change when records or delivery dates are updated.
+These figures reflect the sample data and change as records are updated.
 
 Automated Order Status
 
-The workbook uses predefined rules to classify purchase orders:
-
-Status
-
-Description
-
-Scheduled
-
-No goods have been received and the order is not overdue.
-
-Partially Received
-
-Some goods have been received and the order is not overdue.
-
-Overdue
-
-The promised delivery date has passed and no goods have been received.
-
-Overdue - Partial
-
-The order is overdue and remains partially received.
-
-Complete
-
-The full ordered quantity has been received without over-receipt.
-
-Incomplete
-
-Required information, such as ordered quantity or promised delivery date, is missing.
-
-Over-received
-
-Total received quantity exceeds the ordered quantity.
-
-Status results depend on the workbook's predefined rules and Excel's current calculation date.
+The workbook classifies orders as Scheduled, Partially Received, Overdue, Overdue - Partial, Complete, Incomplete, or Over-received, based on predefined rules and the recorded delivery information.
 
 Excel Skills Demonstrated
 
-SUMIF for aggregating receipt quantities by purchase order
-
-INDEX and MATCH for retrieving supplier names
-
-IF and IFERROR for status logic and error handling
-
-MAX for remaining quantity and days-late calculations
-
-Conditional formatting for visual status indicators
-
-Data filtering for order review and follow-up
-
-KPI reporting and dashboard development
+SUMIF · INDEX · MATCH · IF · IFERROR · MAX · Conditional Formatting · Data Filtering · Dashboard Reporting
 
 How to Use
 
 Open the workbook in Microsoft Excel 2019 or a compatible version.
 
-Review the Dashboard worksheet for a summary of purchasing activity.
+Maintain supplier records in Suppliers.
 
-Add supplier records to Suppliers, ensuring supplier IDs are unique.
+Enter purchase orders in Purchase Orders.
 
-Enter purchase order details in Purchase Orders.
+Record each delivery as a separate row in Receipts, using the matching purchase order number.
 
-Record every delivery as a separate row in Receipts, using the matching purchase order number.
+Review calculated quantities, delivery statuses, and dashboard metrics.
 
-Review the calculated received quantity, remaining quantity, latest receipt date, and order status.
+Note: Use unique purchase order and receipt IDs, and ensure each receipt references the correct purchase order.
 
-Filter orders by status to identify items requiring supplier follow-up.
+Scope
 
-Data-entry reminder: Use unique purchase order numbers and receipt IDs. Enter dates and quantities consistently, and ensure every receipt references the correct purchase order.
+This is an Excel-based portfolio project using illustrative sample data. It is not an integrated ERP system. Supplier contact details and ratings are fictional, and the received value is an approximate metric based on sample order prices and received quantities.
 
-Scope and Assumptions
+Download
 
-All included records are sample data for portfolio demonstration.
-
-This is an Excel-based tracking tool, not an integrated ERP or procurement management system.
-
-Dashboard results depend on the entered data and Excel calculation settings.
-
-Received value is an approximate metric based on sample order prices and received quantities.
-
-Supplier contact details and ratings are illustrative sample information.
-
-Download the Workbook
-
-Download the complete Excel workbook from this repository:
-
-Download Purchase Order Tracker
+Download the Excel Workbook
 
 Author
 
 Bandar Al Radhi
-
-This project was developed as a practical portfolio project demonstrating the application of Excel to procurement operations and purchase order monitoring.
