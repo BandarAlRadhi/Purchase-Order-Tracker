@@ -17,7 +17,7 @@ The dashboard provides a consolidated view of purchasing activity and highlights
 Dashboard Preview
 
 <p align="center">
-  <img src="screenshots/Dashboard-sheet.png" width="950" alt="Purchase Order Dashboard">
+  <img src="screenshots./Dashboard-sheet.png" width="950" alt="Purchase Order Dashboard">
 </p>
 
 The dashboard includes:
@@ -41,11 +41,11 @@ Key Features
 1. Purchase Order Tracking
 
 <p align="center">
-  <img src="screenshots/Purchase-Orders-sheet1.png" width="1000" alt="Purchase Orders - Order Details">
+  <img src="screenshots./Purchase-Orders-sheet1.png" width="1000" alt="Purchase Orders - Order Details">
 </p>
 
 <p align="center">
-  <img src="screenshots/Purchase-Orders-sheet2.png" width="1000" alt="Purchase Orders - Quantities and Status">
+  <img src="screenshots./Purchase-Orders-sheet2.png" width="1000" alt="Purchase Orders - Quantities and Status">
 </p>
 
 Record purchase order numbers, suppliers, item descriptions, categories, and delivery dates.
@@ -65,7 +65,7 @@ Use filters to identify orders requiring follow-up.
 2. Goods Receipt Tracking
 
 <p align="center">
-  <img src="screenshots/Receipts-sheet.png" width="900" alt="Goods Receipt Log">
+  <img src="screenshots./Receipts-sheet.png" width="900" alt="Goods Receipt Log">
 </p>
 
 Record each delivery as a separate receipt event.
@@ -79,7 +79,7 @@ Aggregate received quantities automatically in the Purchase Orders worksheet.
 3. Supplier Directory
 
 <p align="center">
-  <img src="screenshots/Suppliers-sheet.png" width="1000" alt="Supplier Directory">
+  <img src="screenshots./Suppliers-sheet.png" width="1000" alt="Supplier Directory">
 </p>
 
 Maintain unique supplier IDs and supplier names.
